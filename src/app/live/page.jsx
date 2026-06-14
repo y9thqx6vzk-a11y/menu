@@ -4,7 +4,6 @@ import React, { useState, useEffect, useRef } from 'react';
 import Link from 'next/link';
 import itineraryData from '../../data/itinerary.json';
 import { getOptimizedCloudinaryUrl } from '../../utils/cloudinary.js';
-import SosModal from '../../components/SosModal.jsx';
 import OfflineBanner from '../../components/OfflineBanner.jsx';
 
 // Premium SVG Icons
@@ -93,7 +92,6 @@ const ChevronIcon = ({ className = "w-4 h-4", direction = "down" }) => (
 
 export default function LiveDashboard() {
   const [selectedDayNum, setSelectedDayNum] = useState(1);
-  const [isSosOpen, setIsSosOpen] = useState(false);
   const [isCulinaryOpen, setIsCulinaryOpen] = useState(false);
   const dayTabScrollRef = useRef(null);
   const scrollContainerRef = useRef(null);
@@ -378,15 +376,7 @@ export default function LiveDashboard() {
         </div>
       </div>
 
-        {/* SOS Emergency Floating capsule Action Button */}
-        <button
-          onClick={() => setIsSosOpen(true)}
-          className="fixed bottom-24 right-5 md:right-[calc(50vw-220px+20px)] z-40 bg-red-600 hover:bg-red-700 text-white px-4 py-3 rounded-full shadow-lg hover:shadow-red-600/20 transition-all duration-300 active:scale-95 flex items-center space-x-2 group cursor-pointer"
-          aria-label="Trigger SOS Help"
-        >
-          <span className="w-2 h-2 rounded-full bg-white animate-ping" />
-          <span className="text-[10px] font-bold uppercase tracking-wider">Emergency 🚨</span>
-        </button>
+
 
         {/* Sticky Mobile Bottom Navigation Dock */}
         <nav className="absolute bottom-0 left-0 right-0 bg-white/80 backdrop-blur-xl border-t border-stone-200/50 flex justify-around py-3 z-30 shadow-[0_-8px_30px_rgba(0,0,0,0.02)]">
@@ -412,7 +402,7 @@ export default function LiveDashboard() {
           </Link>
         </nav>
 
-        <SosModal isOpen={isSosOpen} onClose={() => setIsSosOpen(false)} />
+
 
       </main>
       

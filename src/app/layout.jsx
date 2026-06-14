@@ -1,5 +1,6 @@
 import './globals.css';
 import { Playfair_Display, Inter } from 'next/font/google';
+import FloatingSos from '../components/FloatingSos';
 
 const playfair = Playfair_Display({ 
   subsets: ['latin'], 
@@ -38,6 +39,7 @@ export default function RootLayout({ children }) {
       </head>
       <body className={`${playfair.variable} ${inter.variable} font-sans antialiased bg-stone-50 text-teal-900`}>
         {children}
+        <FloatingSos />
       </body>
     </html>
   );
