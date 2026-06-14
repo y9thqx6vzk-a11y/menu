@@ -95,7 +95,6 @@ export default function LiveDashboard() {
   const [selectedDayNum, setSelectedDayNum] = useState(1);
   const [isSosOpen, setIsSosOpen] = useState(false);
   const [isCulinaryOpen, setIsCulinaryOpen] = useState(false);
-  const [isHeaderScrolled, setIsHeaderScrolled] = useState(false);
   const dayTabScrollRef = useRef(null);
   const scrollContainerRef = useRef(null);
 
@@ -112,24 +111,6 @@ export default function LiveDashboard() {
       return 1;
     };
     setSelectedDayNum(calculateCurrentTripDay());
-  }, []);
-
-  // Monitor main content scroll to dynamically shrink cover header
-  useEffect(() => {
-    const handleScroll = () => {
-      if (scrollContainerRef.current) {
-        setIsHeaderScrolled(scrollContainerRef.current.scrollTop > 80);
-      }
-    };
-    const scrollEl = scrollContainerRef.current;
-    if (scrollEl) {
-      scrollEl.addEventListener('scroll', handleScroll);
-    }
-    return () => {
-      if (scrollEl) {
-        scrollEl.removeEventListener('scroll', handleScroll);
-      }
-    };
   }, []);
 
   useEffect(() => {
@@ -149,102 +130,81 @@ export default function LiveDashboard() {
   };
 
   return (
-    <div className="w-full min-h-screen bg-brand-dark/95 text-stone-800 font-sans flex justify-center selection:bg-brand-orange/20 relative overflow-hidden">
+    <div className="w-full h-screen bg-brand-dark/95 text-stone-800 flex justify-center selection:bg-brand-orange/20 relative overflow-hidden">
       {/* Decorative desktop ambient blurs */}
       <div className="absolute top-[-20%] left-[-30%] w-[80%] h-[60%] rounded-full bg-brand-teal/10 blur-[150px] pointer-events-none z-0 hidden md:block" />
       <div className="absolute bottom-[-20%] right-[-30%] w-[80%] h-[60%] rounded-full bg-brand-orange/5 blur-[150px] pointer-events-none z-0 hidden md:block" />
 
       {/* Main app container shell (simulating a mobile screen on desktop) */}
-      <main className="w-full max-w-md min-h-screen bg-brand-sand shadow-2xl relative flex flex-col z-10 border-x border-stone-200/40">
+      <main className="w-full max-w-md h-full bg-brand-sand shadow-2xl relative flex flex-col z-10 border-x border-stone-200/40 overflow-hidden">
         
         <OfflineBanner />
 
-        {/* Dynamic Cover Header */}
-        <div className={`relative transition-all duration-500 ease-out overflow-hidden z-20 shrink-0 ${
-          isHeaderScrolled ? 'h-20 bg-brand-dark shadow-md' : 'h-64 bg-stone-900'
-        }`}>
-          {currentDayData.imageUrl && !isHeaderScrolled && (
-            <img 
-              src={getOptimizedCloudinaryUrl(currentDayData.imageUrl, 600)} 
-              alt={currentDayData.title}
-              className="w-full h-full object-cover transition-all duration-700 transform scale-105"
-            />
-          )}
-          {/* Cover gradient overlay */}
-          <div className={`absolute inset-0 transition-opacity duration-500 ${
-            isHeaderScrolled ? 'bg-brand-dark opacity-100' : 'bg-gradient-to-t from-brand-dark via-brand-dark/60 to-transparent opacity-90'
-          }`} />
-          
-          {/* Header Top elements */}
-          <div className="absolute top-4 left-5 right-5 flex justify-between items-center z-10">
-            <span className="text-[10px] font-bold tracking-widest uppercase bg-white/10 backdrop-blur-md px-3 py-1.5 rounded-full border border-white/20 text-brand-orange flex items-center gap-1.5 shadow-sm">
-              <MapPinIcon className="w-3.5 h-3.5" />
-              <span>{currentDayData.location}</span>
-            </span>
-            <span className="text-[9px] font-bold tracking-wider uppercase bg-white/5 backdrop-blur-md px-2.5 py-1.5 rounded-full border border-white/10 text-stone-300">
-              Trip Live
-            </span>
-          </div>
+        {/* Scrollable Container (covers the entire main area except the bottom nav) */}
+        <div 
+          ref={scrollContainerRef}
+          className="flex-1 overflow-y-auto scrollbar-thin pb-24"
+        >
+          {/* Cover Header */}
+          <div className="relative h-64 bg-stone-900 overflow-hidden shrink-0">
+            {currentDayData.imageUrl && (
+              <img 
+                src={getOptimizedCloudinaryUrl(currentDayData.imageUrl, 600)} 
+                alt={currentDayData.title}
+                className="w-full h-full object-cover transition-all duration-700 transform scale-105"
+              />
+            )}
+            {/* Cover gradient overlay */}
+            <div className="absolute inset-0 bg-gradient-to-t from-brand-dark via-brand-dark/60 to-transparent opacity-90" />
+            
+            {/* Header Top elements */}
+            <div className="absolute top-4 left-5 right-5 flex justify-between items-center z-10">
+              <span className="text-[10px] font-bold tracking-widest uppercase bg-white/10 backdrop-blur-md px-3 py-1.5 rounded-full border border-white/20 text-brand-orange flex items-center gap-1.5 shadow-sm">
+                <MapPinIcon className="w-3.5 h-3.5" />
+                <span>{currentDayData.location}</span>
+              </span>
+              <span className="text-[9px] font-bold tracking-wider uppercase bg-white/5 backdrop-blur-md px-2.5 py-1.5 rounded-full border border-white/10 text-stone-300">
+                Trip Live
+              </span>
+            </div>
 
-          {/* Header Title elements */}
-          <div className={`absolute left-5 right-5 text-white transition-all duration-500 ease-out ${
-            isHeaderScrolled ? 'bottom-3 opacity-0 scale-95 pointer-events-none' : 'bottom-5 opacity-100 scale-100'
-          }`}>
-            <h1 className="text-[10px] font-bold uppercase tracking-[0.2em] text-brand-orange mb-1.5 drop-shadow">
-              Day {currentDayData.dayNumber} of {itineraryData.days.length} • {getFriendlyDateString(currentDayData.date)}
-            </h1>
-            <h2 className="text-2xl font-serif font-bold leading-tight text-white drop-shadow-md">
-              {currentDayData.title}
-            </h2>
-          </div>
-
-          {/* Mini-compact header title shown ONLY when scrolled */}
-          <div className={`absolute left-5 right-5 bottom-4 text-white transition-all duration-500 ease-out flex items-center justify-between ${
-            isHeaderScrolled ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-3 pointer-events-none'
-          }`}>
-            <div>
-              <h1 className="text-[9px] font-bold uppercase tracking-widest text-brand-orange">
-                Day {currentDayData.dayNumber} of {itineraryData.days.length}
+            {/* Header Title elements */}
+            <div className="absolute left-5 right-5 bottom-5 text-white">
+              <h1 className="text-[10px] font-bold uppercase tracking-[0.2em] text-brand-orange mb-1.5 drop-shadow">
+                Day {currentDayData.dayNumber} of {itineraryData.days.length} • {getFriendlyDateString(currentDayData.date)}
               </h1>
-              <h2 className="text-base font-serif font-bold leading-tight truncate max-w-[240px]">
+              <h2 className="text-2xl font-serif font-bold leading-tight text-white drop-shadow-md">
                 {currentDayData.title}
               </h2>
             </div>
-            <span className="text-[10px] text-stone-400 font-sans tracking-wide">
-              {currentDayData.date.split('-')[2]}/{currentDayData.date.split('-')[1]}
-            </span>
           </div>
-        </div>
 
-        {/* Floating Glassmorphic Day Selector Pill Row */}
-        <div 
-          ref={dayTabScrollRef}
-          className="flex overflow-x-auto scrollbar-none space-x-2 px-5 py-3.5 bg-brand-sand/90 backdrop-blur-md border-b border-stone-200/50 sticky top-0 z-20 shadow-sm"
-        >
-          {itineraryData.days.map((day) => {
-            const isActive = day.dayNumber === selectedDayNum;
-            return (
-              <button
-                key={day.dayNumber}
-                data-day={day.dayNumber}
-                onClick={() => setSelectedDayNum(day.dayNumber)}
-                className={`flex-shrink-0 px-4 py-2 rounded-full text-xs font-bold transition-all duration-300 active:scale-95 ${
-                  isActive
-                    ? 'bg-gradient-to-r from-brand-orange to-brand-amber text-white shadow-md shadow-brand-orange/20 scale-105'
-                    : 'bg-white text-stone-600 border border-stone-200/80 hover:bg-stone-50'
-                }`}
-              >
-                Day {day.dayNumber}
-              </button>
-            );
-          })}
-        </div>
+          {/* Sticky Day Selector Pill Row */}
+          <div 
+            ref={dayTabScrollRef}
+            className="flex overflow-x-auto scrollbar-none space-x-2 px-5 py-3.5 bg-brand-sand/95 backdrop-blur-md border-b border-stone-200/50 sticky top-0 z-20 shadow-sm"
+          >
+            {itineraryData.days.map((day) => {
+              const isActive = day.dayNumber === selectedDayNum;
+              return (
+                <button
+                  key={day.dayNumber}
+                  data-day={day.dayNumber}
+                  onClick={() => setSelectedDayNum(day.dayNumber)}
+                  className={`flex-shrink-0 px-4 py-2 rounded-full text-xs font-bold transition-all duration-300 active:scale-95 ${
+                    isActive
+                      ? 'bg-gradient-to-r from-brand-orange to-brand-amber text-white shadow-md shadow-brand-orange/20 scale-105'
+                      : 'bg-white text-stone-600 border border-stone-200/80 hover:bg-stone-50'
+                  }`}
+                >
+                  Day {day.dayNumber}
+                </button>
+              );
+            })}
+          </div>
 
-        {/* Scrollable Dashboard Body */}
-        <div 
-          ref={scrollContainerRef}
-          className="px-5 py-6 space-y-6 flex-1 overflow-y-auto scrollbar-thin pb-28"
-        >
+          {/* Dashboard Main Content Body */}
+          <div className="px-5 py-6 space-y-6">
           
           {/* Hotel Accommodation Card */}
           <div className="bg-white rounded-[1.25rem] p-5 border border-stone-200/40 shadow-sm flex items-start space-x-4">
@@ -416,6 +376,7 @@ export default function LiveDashboard() {
           </div>
 
         </div>
+      </div>
 
         {/* SOS Emergency Floating capsule Action Button */}
         <button

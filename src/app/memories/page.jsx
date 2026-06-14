@@ -119,13 +119,13 @@ export default function MemoriesPage() {
   };
 
   return (
-    <div className="w-full min-h-screen bg-brand-dark/95 text-stone-800 font-sans flex justify-center selection:bg-brand-orange/20 relative overflow-hidden">
+    <div className="w-full h-screen bg-brand-dark/95 text-stone-800 flex justify-center selection:bg-brand-orange/20 relative overflow-hidden">
       {/* Decorative desktop ambient blurs */}
       <div className="absolute top-[-20%] left-[-30%] w-[80%] h-[60%] rounded-full bg-brand-teal/10 blur-[150px] pointer-events-none z-0 hidden md:block" />
       <div className="absolute bottom-[-20%] right-[-30%] w-[80%] h-[60%] rounded-full bg-brand-orange/5 blur-[150px] pointer-events-none z-0 hidden md:block" />
 
       {/* Main app container shell */}
-      <main className="w-full max-w-md min-h-screen bg-brand-sand shadow-2xl relative flex flex-col z-10 border-x border-stone-200/40 pb-28">
+      <main className="w-full max-w-md h-full bg-brand-sand shadow-2xl relative flex flex-col z-10 border-x border-stone-200/40 overflow-hidden">
         
         {/* Header Cover Banner */}
         <div className="relative h-44 bg-brand-dark flex items-end p-6 overflow-hidden">
