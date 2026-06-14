@@ -45,18 +45,31 @@ const ChevronIcon = ({ className = "w-4 h-4", direction = "down" }) => (
 
 // Packing Checklist Data
 const CHECKLIST_ITEMS = [
+  // Pre-Trip Tasks / To-Do
+  { id: 'apply-visa', text: 'Apply for Sri Lanka ETA Visa online', category: 'todo' },
+  { id: 'buy-insurance', text: 'Purchase comprehensive travel insurance', category: 'todo' },
+  { id: 'passport-validity', text: 'Verify passport validity (min. 6 months)', category: 'todo' },
+  { id: 'exchange-usd', text: 'Withdraw/Exchange clean US Dollar bills', category: 'todo' },
+  { id: 'travel-clinic', text: 'Check required vaccines / health consult', category: 'todo' },
+  { id: 'activate-esim', text: 'Buy eSIM or local mobile data plan', category: 'todo' },
+  { id: 'print-docs', text: 'Print flight tickets & booking vouchers', category: 'todo' },
+  { id: 'notify-bank', text: 'Notify credit card company of travel plans', category: 'todo' },
+
+  // Packing: Clothing
   { id: 'sarong', text: 'Sarong / modest scarf (covering shoulders & knees)', category: 'clothing' },
   { id: 'shabbat-white', 'text': 'White dress or shirt for Shabbat Pasikudah', category: 'clothing' },
   { id: 'linen-pants', text: 'Lightweight linen/cotton pants (breathable)', category: 'clothing' },
   { id: 'tshirts', text: 'Comfy cotton t-shirts (for long bus rides)', category: 'clothing' },
   { id: 'fleece', text: 'Warm fleece or sweater (Nuwara Eliya gets cold ~14°C)', category: 'clothing' },
   
+  // Packing: Gear
   { id: 'hiking-shoes', text: 'Sturdy hiking boots or trail sneakers (Sigiriya)', category: 'gear' },
   { id: 'water-shoes', text: 'Water shoes (Rafting & Canyoning Kithulgala)', category: 'gear' },
   { id: 'swimwear', text: 'Swimwear & rash guard (SUP Pasikudah & snorkeling)', category: 'gear' },
   { id: 'poncho', text: 'Rain poncho or compact travel umbrella', category: 'gear' },
   { id: 'insect-repellent', text: 'DEET mosquito repellent & high SPF sunscreen', category: 'gear' },
   
+  // Packing: Docs & Cash
   { id: 'passport', text: 'Passport (valid for at least 6 months)', category: 'docs' },
   { id: 'visa', text: 'Sri Lanka ETA Visa approval printout', category: 'docs' },
   { id: 'insurance', text: 'Travel insurance certificate & emergency numbers', category: 'docs' },
@@ -65,7 +78,7 @@ const CHECKLIST_ITEMS = [
 ];
 
 export default function EssentialsPage() {
-  const [activeCategory, setActiveCategory] = useState('clothing');
+  const [activeCategory, setActiveCategory] = useState('todo');
   const [checkedItems, setCheckedItems] = useState({});
   const [isSimCardOpen, setIsSimCardOpen] = useState(false);
   const [isCurrencyOpen, setIsCurrencyOpen] = useState(false);
@@ -153,8 +166,18 @@ export default function EssentialsPage() {
         <div className="px-5 mt-6">
           <div className="bg-white/80 border border-stone-200/40 p-1 rounded-xl flex justify-between shadow-sm">
             <button
+              onClick={() => setActiveCategory('todo')}
+              className={`flex-1 text-center py-2.5 rounded-lg text-[10px] font-extrabold tracking-tight transition-all ${
+                activeCategory === 'todo' 
+                  ? 'bg-brand-dark text-white shadow-sm' 
+                  : 'text-stone-500 hover:text-brand-dark'
+              }`}
+            >
+              📋 Pre-Trip
+            </button>
+            <button
               onClick={() => setActiveCategory('clothing')}
-              className={`flex-1 text-center py-2.5 rounded-lg text-xs font-bold transition-all ${
+              className={`flex-1 text-center py-2.5 rounded-lg text-[10px] font-extrabold tracking-tight transition-all ${
                 activeCategory === 'clothing' 
                   ? 'bg-brand-dark text-white shadow-sm' 
                   : 'text-stone-500 hover:text-brand-dark'
@@ -164,7 +187,7 @@ export default function EssentialsPage() {
             </button>
             <button
               onClick={() => setActiveCategory('gear')}
-              className={`flex-1 text-center py-2.5 rounded-lg text-xs font-bold transition-all ${
+              className={`flex-1 text-center py-2.5 rounded-lg text-[10px] font-extrabold tracking-tight transition-all ${
                 activeCategory === 'gear' 
                   ? 'bg-brand-dark text-white shadow-sm' 
                   : 'text-stone-500 hover:text-brand-dark'
@@ -174,13 +197,13 @@ export default function EssentialsPage() {
             </button>
             <button
               onClick={() => setActiveCategory('docs')}
-              className={`flex-1 text-center py-2.5 rounded-lg text-xs font-bold transition-all ${
+              className={`flex-1 text-center py-2.5 rounded-lg text-[10px] font-extrabold tracking-tight transition-all ${
                 activeCategory === 'docs' 
                   ? 'bg-brand-dark text-white shadow-sm' 
                   : 'text-stone-500 hover:text-brand-dark'
               }`}
             >
-              🛂 Docs & Cash
+              🛂 Docs
             </button>
           </div>
         </div>
