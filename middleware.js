@@ -17,6 +17,11 @@ const ROUTE_LOGIN = '/login';
 export async function middleware(request) {
   const { pathname } = request.nextUrl;
 
+  // --- DEV MODE: Bypass authentication ---
+  // Temporarily allowing all requests through so the user can view the site without logging in.
+  return NextResponse.next();
+  // ----------------------------------------
+  
   // 1. Exclude public assets, static files, images, and API routes from middleware intercepts
   if (
     pathname.startsWith('/_next') ||
