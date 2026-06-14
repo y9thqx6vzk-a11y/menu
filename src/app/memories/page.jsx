@@ -40,7 +40,7 @@ const PlusIcon = ({ className = "w-4 h-4" }) => (
 const DEFAULT_MEMORIES = [
   {
     id: 'def-1',
-    author: 'Shani',
+    author: 'Naomi',
     caption: 'Rising above the jungle canopy at sunrise on Sigiriya Rock! 🌄🧗‍♀️',
     imageUrl: 'https://res.cloudinary.com/dsgvsqnjp/image/upload/f_auto,q_auto,w_600,c_fill/sigiriya_view',
     date: 'August 31, 2026',
@@ -162,7 +162,7 @@ export default function MemoriesPage() {
                     required
                     value={author}
                     onChange={(e) => setAuthor(e.target.value)}
-                    placeholder="e.g. Shani"
+                    placeholder="e.g. Naomi"
                     className="w-full px-3.5 py-2.5 bg-stone-50 border border-stone-200 rounded-xl text-xs font-semibold text-stone-800 placeholder-stone-400 focus:outline-none focus:border-brand-teal"
                   />
                 </div>

@@ -53,21 +53,57 @@ export default function SosModal({ isOpen, onClose }) {
         {/* Contacts List */}
         <div className="space-y-4">
           
-          {/* 1. Trip Coordinator */}
-          <div className="p-4 bg-gray-50 rounded-2xl border border-gray-100 flex items-center justify-between">
-            <div>
-              <span className="text-xs font-semibold uppercase tracking-wider text-teal-600">Trip Leader</span>
-              <h3 className="font-semibold text-gray-900 text-base">Shani (On the Ground)</h3>
-              <p className="text-xs text-gray-500">+94 77 123 4567</p>
+          {/* 1. Trip Coordinators */}
+          <div className="space-y-2.5">
+            <span className="text-[10px] font-bold uppercase tracking-widest text-teal-600 pl-1">Trip Leaders</span>
+            
+            {/* Naomi */}
+            <div className="p-4 bg-gray-50 rounded-2xl border border-gray-100 flex items-center justify-between">
+              <div>
+                <h3 className="font-semibold text-gray-900 text-base">Naomi</h3>
+                <p className="text-xs text-gray-500">+94 77 111 2222</p>
+              </div>
+              <a 
+                href="tel:+94771112222" 
+                className="p-3 bg-teal-600 hover:bg-teal-700 text-white rounded-full transition-transform active:scale-95 shadow-md flex items-center justify-center"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-5 h-5">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.387a20.373 20.373 0 01-9.352-9.352c-.155-.44-.012-.927.387-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" />
+                </svg>
+              </a>
             </div>
-            <a 
-              href="tel:+94771234567" 
-              className="p-3 bg-teal-600 hover:bg-teal-700 text-white rounded-full transition-transform active:scale-95 shadow-md flex items-center justify-center"
-            >
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-5 h-5">
-                <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.387a20.373 20.373 0 01-9.352-9.352c-.155-.44-.012-.927.387-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" />
-              </svg>
-            </a>
+
+            {/* Eyal */}
+            <div className="p-4 bg-gray-50 rounded-2xl border border-gray-100 flex items-center justify-between">
+              <div>
+                <h3 className="font-semibold text-gray-900 text-base">Eyal</h3>
+                <p className="text-xs text-gray-500">+94 77 333 4444</p>
+              </div>
+              <a 
+                href="tel:+94773334444" 
+                className="p-3 bg-teal-600 hover:bg-teal-700 text-white rounded-full transition-transform active:scale-95 shadow-md flex items-center justify-center"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-5 h-5">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.387a20.373 20.373 0 01-9.352-9.352c-.155-.44-.012-.927.387-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" />
+                </svg>
+              </a>
+            </div>
+
+            {/* Aliza */}
+            <div className="p-4 bg-gray-50 rounded-2xl border border-gray-100 flex items-center justify-between">
+              <div>
+                <h3 className="font-semibold text-gray-900 text-base">Aliza</h3>
+                <p className="text-xs text-gray-500">+94 77 555 6666</p>
+              </div>
+              <a 
+                href="tel:+94775556666" 
+                className="p-3 bg-teal-600 hover:bg-teal-700 text-white rounded-full transition-transform active:scale-95 shadow-md flex items-center justify-center"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-5 h-5">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.387a20.373 20.373 0 01-9.352-9.352c-.155-.44-.012-.927.387-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" />
+                </svg>
+              </a>
+            </div>
           </div>
 
           {/* 2. Sri Lanka Tourist Police */}

@@ -70,7 +70,7 @@ export default function Home() {
             </li>
             <li className="flex justify-between">
               <span className="opacity-75">Group Lead:</span>
-              <span className="font-semibold text-white">Shani (On site)</span>
+              <span className="font-semibold text-white">Naomi, Eyal & Aliza</span>
             </li>
           </ul>
         </div>
