@@ -14,6 +14,14 @@ export default {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        brand: {
+          dark: "#062c1e",
+          teal: "#0d9488",
+          orange: "#f97316",
+          amber: "#d97706",
+          sand: "#fcfbf9",
+          gold: "#eab308",
+        }
       },
     },
   },

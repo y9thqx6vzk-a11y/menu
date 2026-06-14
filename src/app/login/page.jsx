@@ -2,43 +2,63 @@ import Link from 'next/link';
 
 export default function LoginPage() {
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen bg-gray-50 text-gray-900 p-6">
-      <div className="bg-white p-8 rounded-2xl shadow-xl w-full max-w-md">
-        <h1 className="text-2xl font-bold mb-6 text-center">Login to Your Trip</h1>
-        
-        <p className="text-gray-600 mb-6 text-center text-sm">
-          Welcome to the Sri Lanka Women's Trip. Please log in to access your itinerary, packing list, and daily schedule.
-        </p>
+    <div className="w-full min-h-screen bg-brand-dark text-stone-100 font-sans flex items-center justify-center p-6 selection:bg-brand-orange/20 relative overflow-hidden">
+      {/* Background ambient blurs */}
+      <div className="absolute top-[-20%] left-[-20%] w-[70%] h-[60%] rounded-full bg-brand-teal/15 blur-[120px] pointer-events-none z-0" />
+      <div className="absolute bottom-[-20%] right-[-20%] w-[70%] h-[60%] rounded-full bg-brand-amber/10 blur-[120px] pointer-events-none z-0" />
 
-        <form className="flex flex-col gap-4">
-          <div>
-            <label className="block text-sm font-medium text-gray-700 mb-1">Email</label>
+      {/* Main glass card */}
+      <div className="relative z-10 w-full max-w-md bg-white/5 backdrop-blur-xl border border-white/10 p-8 rounded-3xl shadow-2xl space-y-6">
+        
+        {/* Logo / Branding */}
+        <div className="text-center space-y-2">
+          <span className="text-3xl animate-float inline-block">🌿</span>
+          <h1 className="text-2xl font-serif font-bold tracking-wider text-white">Savtot Travel Club</h1>
+          <p className="text-xs text-stone-400">Enter credentials to unlock your companion app</p>
+        </div>
+
+        {/* Form */}
+        <form className="space-y-4">
+          <div className="space-y-1.5">
+            <label className="block text-[10px] font-bold uppercase tracking-wider text-stone-400">Email Address</label>
             <input 
               type="email" 
-              className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-black focus:border-black"
+              required
+              className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-xl text-xs font-semibold text-white placeholder-stone-500 focus:outline-none focus:border-brand-amber focus:bg-white/[0.08] transition-all"
               placeholder="you@example.com"
             />
           </div>
-          <div>
-            <label className="block text-sm font-medium text-gray-700 mb-1">Password</label>
+          
+          <div className="space-y-1.5">
+            <label className="block text-[10px] font-bold uppercase tracking-wider text-stone-400">Security Password</label>
             <input 
               type="password" 
-              className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-black focus:border-black"
+              required
+              className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-xl text-xs font-semibold text-white placeholder-stone-500 focus:outline-none focus:border-brand-amber focus:bg-white/[0.08] transition-all"
               placeholder="••••••••"
             />
           </div>
-          
-          <button 
-            type="button" 
-            className="mt-4 w-full bg-black text-white py-3 rounded-xl font-semibold hover:bg-gray-800 transition"
-          >
-            Log In
-          </button>
+
+          <div className="pt-2">
+            <Link 
+              href="/live"
+              className="block w-full bg-gradient-to-r from-brand-orange to-brand-amber hover:from-brand-orange/95 hover:to-brand-amber/95 text-white py-3.5 rounded-xl font-bold text-xs shadow-md active:scale-[0.98] transition-all text-center border border-white/10"
+            >
+              Sign In
+            </Link>
+          </div>
         </form>
 
-        <div className="mt-8 text-center text-xs text-gray-400">
-          * This is a demo login page. In a real app, this would connect to Firebase Auth and set the `__session` cookie.
+        {/* Footnote */}
+        <div className="pt-4 border-t border-white/5 text-center space-y-2">
+          <p className="text-[10px] text-stone-500 leading-normal">
+            Bypassed during developer evaluation mode. Feel free to click "Sign In" directly to access the dashboard.
+          </p>
+          <Link href="/" className="inline-block text-[10px] text-brand-teal hover:text-brand-orange transition-colors font-bold uppercase tracking-wider">
+            ← Back to Welcome Screen
+          </Link>
         </div>
+
       </div>
     </div>
   );
