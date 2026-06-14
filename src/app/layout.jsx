@@ -1,4 +1,15 @@
 import './globals.css';
+import { Playfair_Display, Inter } from 'next/font/google';
+
+const playfair = Playfair_Display({ 
+  subsets: ['latin'], 
+  variable: '--font-playfair' 
+});
+
+const inter = Inter({ 
+  subsets: ['latin'], 
+  variable: '--font-inter' 
+});
 
 export const metadata = {
   title: 'Sri Lanka Women\'s Trip',
@@ -25,7 +36,7 @@ export default function RootLayout({ children }) {
       <head>
         <link rel="apple-touch-icon" href="/icon512_maskable.png" />
       </head>
-      <body>
+      <body className={`${playfair.variable} ${inter.variable} font-sans antialiased bg-stone-50 text-teal-900`}>
         {children}
       </body>
     </html>
