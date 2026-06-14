@@ -111,7 +111,7 @@ export default function EssentialsPage() {
       <main className="w-full max-w-md h-full bg-brand-sand shadow-2xl relative flex flex-col z-10 border-x border-stone-200/40 overflow-hidden">
         
         {/* Scrollable Container */}
-        <div className="flex-1 overflow-y-auto scrollbar-thin">
+        <div className="flex-1 overflow-y-auto scrollbar-thin pb-28">
         
         {/* Header Cover Banner */}
         <div className="relative h-44 bg-brand-dark flex items-end p-6 overflow-hidden">

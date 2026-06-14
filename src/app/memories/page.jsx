@@ -218,7 +218,7 @@ export default function MemoriesPage() {
         )}
 
         {/* Polaroid memories grid */}
-        <div className="px-6 py-6 space-y-8 flex-1 overflow-y-auto scrollbar-thin">
+        <div className="px-6 pt-6 pb-28 space-y-8 flex-1 overflow-y-auto scrollbar-thin">
           {memories.map((memory) => (
             <div 
               key={memory.id}
