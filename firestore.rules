@@ -1,0 +1,115 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // --- Core Helper Functions ---
+    
+    // Checks if the request is authenticated
+    function isAuthenticated() {
+      return request.auth != null;
+    }
+
+    // Checks if the authenticated user matches the target UID
+    function isOwner(uid) {
+      return isAuthenticated() && request.auth.uid == uid;
+    }
+
+    // Gets the active role of the authenticated user.
+    // Prioritizes the secure, tamper-proof custom claims token role, falling back to a Firestore document lookup.
+    function getUserRole() {
+      return request.auth.token.role != null 
+        ? request.auth.token.role 
+        : get(/databases/$(database)/documents/users/$(request.auth.uid)).data.role;
+    }
+
+    // Checks if the authenticated user is an administrator
+    function isAdmin() {
+      return isAuthenticated() && (
+        request.auth.token.role == 'ADMIN' || 
+        request.auth.token.isAdmin == true ||
+        (request.auth.token.email == 'admin@mybrand.com' && request.auth.token.email_verified == true)
+      );
+    }
+
+    // --- Collections ---
+
+    // 1. User Profiles Collection
+    match /users/{uid} {
+      // Users can read their own profiles, admins can read all.
+      allow read: if isOwner(uid) || isAdmin();
+      
+      // Creating profiles: users can create their own profile, but cannot self-assign elevated roles.
+      // The role must be 'PRE_TRIP' or omit it (which defaults to 'PRE_TRIP').
+      allow create: if isOwner(uid)
+        && request.resource.data.role == 'PRE_TRIP'
+        && request.resource.data.keys().hasOnly(['uid', 'email', 'name', 'role', 'createdAt'])
+        && request.resource.data.email is string
+        && request.resource.data.name is string
+        && request.resource.data.email.size() < 100
+        && request.resource.data.name.size() < 100;
+
+      // Updating profiles: users can update name/profile fields, but are strictly prohibited
+      // from changing security-sensitive fields (role, uid, email, createdAt).
+      allow update: if isOwner(uid)
+        && (!request.resource.data.diff(resource.data).affectedKeys().hasAny(['role', 'uid', 'email', 'createdAt']))
+        && request.resource.data.name is string
+        && request.resource.data.name.size() < 100;
+
+      // Deleting profiles: administrative privilege only.
+      allow delete: if isAdmin();
+    }
+
+    // 2. Itineraries / Trip Details Collection
+    match /itinerary/{itemId} {
+      // General trip logistics are viewable by all travelers (PRE_TRIP, ACTIVE_TRIP, ALUMNA).
+      allow read: if isAuthenticated() && (
+        getUserRole() == 'PRE_TRIP' ||
+        getUserRole() == 'ACTIVE_TRIP' ||
+        getUserRole() == 'ALUMNA' ||
+        isAdmin()
+      );
+
+      // Block editing for all travelers. Only administrators can edit/write the itinerary.
+      allow write: if isAdmin();
+    }
+
+    // 3. Live Itinerary / Active Tracker Collection (e.g. real-time coordinates, live announcements)
+    match /live_itinerary/{docId} {
+      // Only ACTIVE_TRIP travelers and administrators can access live trip feeds.
+      // Access is blocked for PRE_TRIP (not started) and ALUMNA (trip concluded).
+      allow read: if isAuthenticated() && (
+        getUserRole() == 'ACTIVE_TRIP' || 
+        isAdmin()
+      );
+      
+      // Block editing for all travelers. Only administrators can update live parameters.
+      allow write: if isAdmin();
+    }
+
+    // 4. Photo Gallery and Feedback (Memories) Collection
+    match /memories/{memoryId} {
+      // Viewable by active travelers, alumnae, and admins. Blocked for pre-trip.
+      allow read: if isAuthenticated() && (
+        getUserRole() == 'ACTIVE_TRIP' ||
+        getUserRole() == 'ALUMNA' ||
+        isAdmin()
+      );
+
+      // Creation allowed for active/alumna. Enforce structural integrity and size limits.
+      allow create: if isAuthenticated()
+        && (getUserRole() == 'ACTIVE_TRIP' || getUserRole() == 'ALUMNA' || isAdmin())
+        && request.resource.data.authorId == request.auth.uid
+        && request.resource.data.caption is string
+        && request.resource.data.caption.size() < 250
+        && request.resource.data.imageUrl is string
+        && request.resource.data.imageUrl.size() < 500
+        && request.resource.data.imageUrl.matches('https://.*');
+
+      // Update/Delete: Only the author of the memory or an admin can modify/delete it.
+      // Authors cannot transfer ownership (cannot change authorId).
+      allow update, delete: if isAuthenticated()
+        && (resource.data.authorId == request.auth.uid || isAdmin())
+        && (request.method == 'delete' || !request.resource.data.diff(resource.data).affectedKeys().hasAny(['authorId']));
+    }
+  }
+}

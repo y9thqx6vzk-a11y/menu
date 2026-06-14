@@ -1,0 +1,795 @@
+{
+  "tripName": "Sri Lanka Women's Adventure",
+  "startDate": "2026-08-30T00:00:00.000Z",
+  "endDate": "2026-09-08T23:59:59.000Z",
+  "days": [
+    {
+      "dayNumber": 1,
+      "date": "2026-08-30",
+      "title": "Welcome Journey to Sigiriya",
+      "location": "Colombo to Sigiriya",
+      "hotel": "Liyya Water Villas (Sigiriya)",
+      "meals": ["Dinner"],
+      "reminders": {
+        "clothing": "Casual comfy clothing for the long drive.",
+        "footwear": "Comfortable travel shoes."
+      },
+      "timeline": [
+        { "time": "Afternoon", "title": "Landing at Colombo Airport", "desc": "Arrive at Bandaranaike International Airport (CMB) and meet the tour coordinator." },
+        { "time": "02:30 PM", "title": "Private Transit to Sigiriya", "desc": "Embark on a scenic 4-hour drive to the Cultural Triangle in our private coach." },
+        { "time": "06:30 PM", "title": "Hotel Check-in", "desc": "Welcome drinks and check-in at the luxurious Liyya Water Villas in Sigiriya." },
+        { "time": "08:00 PM", "title": "Welcome Dinner", "desc": "Fresh, welcoming coastal and local elements served at Hotel Sigiriya to kick off the adventure." }
+      ],
+      "culinary": {
+        "concept": "Fresh, welcoming coastal and local elements after the drive.",
+        "meals": [
+          {
+            "type": "Dinner (Hotel Sigiriya)",
+            "sections": [
+              {
+                "name": "Main Course (Choose 1)",
+                "items": [
+                  "Black Sesame-Crumbed Red Mullet: Fresh red mullet fillets coated in flour, egg, and black sesame seeds, shallow-fried and served with rich tartar sauce.",
+                  "Sea Bass 'En Papillote' (Skillet-Style): White fish fillet slow-cooked in a sealed parchment pouch on the stove with olive oil, garlic, and fresh broccoli.",
+                  "Premium Agedashi Tofu: Large firm tofu cubes fried glass-crisp, served floating in a hot, reduced soy, cooking sake, and sesame oil broth."
+                ]
+              },
+              {
+                "name": "Sides (Choose 2)",
+                "items": [
+                  "Shoestring Pommes Frites: Thin, hand-cut potato fries pan-fried to order in clean sunflower oil until shattering crisp.",
+                  "Aromatic Coconut Rice: Fluffy long-grain white rice steamed in diluted coconut milk with mustard seeds.",
+                  "Garlic-Herb Tossed Pasta: Short Italian pasta sautéed in extra virgin olive oil, golden toasted garlic slivers, and dried herbs."
+                ]
+              },
+              {
+                "name": "Salad (Choose 1)",
+                "items": [
+                  "Sautéed Mushroom Salad: Skillet-seared fresh whole mushrooms and broccoli tossed hot with raw cherry tomatoes and garlic.",
+                  "Tropical Mango & Avocado Salad: Cubes of fresh local mango, tree-ripened avocado, red onion, and fresh coriander with olive oil & lime juice.",
+                  "Charred Skillet Veggies: Slices of sweet potato, sweet bell peppers, and onions seared on a hot skillet for a deep, smoky flavor."
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "dayNumber": 2,
+      "date": "2026-08-31",
+      "title": "Sigiriya Rock Climb & Elephant Safari",
+      "location": "Sigiriya",
+      "hotel": "Liyya Water Villas (Sigiriya)",
+      "meals": ["Breakfast", "Dinner"],
+      "reminders": {
+        "clothing": "🥻 Bring a Sarong/modest clothing covering shoulders and knees for the Village Tour.",
+        "footwear": "👟 Hiking shoes required for the morning Sigiriya Rock climb."
+      },
+      "timeline": [
+        { "time": "06:00 AM", "title": "Sigiriya Rock Sunrise Hike", "desc": "Guided early climb to ascend the rock fortress for cooler climbing temperatures and jungle sunrise views." },
+        { "time": "09:30 AM", "title": "Breakfast & Lunch Packing", "desc": "Enjoy breakfast and self-pack a high-protein lunch box for today's excursions." },
+        { "time": "11:30 AM", "title": "Authentic Village Tour", "desc": "Immersive exploration of village life, local farming, and lake catamarans." },
+        { "time": "02:30 PM", "title": "Wildlife Elephant Safari", "desc": "4x4 open-jeep safari through Minneriya/Kaudulla national reserve to view gathering wild elephant herds." },
+        { "time": "07:30 PM", "title": "Dinner at Liyya Water Villas", "desc": "Vibrant Pacific Rim flavors served poolside at the hotel." }
+      ],
+      "culinary": {
+        "concept": "High-protein morning energy for the rock climb and vibrant Pacific Rim flavors at night.",
+        "meals": [
+          {
+            "type": "Breakfast & Self-Packing Lunch (Hotel Sigiriya)",
+            "sections": [
+              {
+                "name": "Breakfast Main Course (Choose 1)",
+                "items": [
+                  "French Mushroom Omelette: Silky, golden omelette rolled with butter-sautéed mushrooms, boasting a soft, warm cream cheese center.",
+                  "Fluffy Soufflé Pancakes: Extra-airy pancakes served with an organic butter melting slab and a sweet strawberry jam reduction.",
+                  "Garlic Confit Poached Eggs: Runny poached eggs served over thick artisan bread brushed with extra virgin olive oil and sweet melted garlic cloves."
+                ]
+              },
+              {
+                "name": "Breakfast Sides (Choose 2)",
+                "items": [
+                  "Stuffed Avocado Boats: Half-avocados filled to the brim with micro-diced cherry tomatoes, extra virgin olive oil, and coarse sea salt.",
+                  "Crisp Veggie Crudités: Crisp hand-cut carrot, sweet bell pepper, and cucumber batons served alongside an organic cream cheese spread.",
+                  "Coconut Oatmeal Porridge: Small bowl of warm rolled oats simmered in freshly squeezed coconut milk, pure honey, and real vanilla bean extract."
+                ]
+              },
+              {
+                "name": "Breakfast Salad (Choose 1)",
+                "items": [
+                  "Tropical Red Berry Salad: Sliced banana, ripe papaya, and sweet raisins tossed in a fresh strawberry-lime glaze.",
+                  "A Gardener's Love Salad: Crisp lettuce, cabbage, carrots, green cucumber, tomato, onion, and bell pepper with French dressing.",
+                  "Tahini-Drizzled Trio: Diced vine-ripened tomatoes, dill pickles, and sweet bell peppers topped with a heavy pour of raw sesame tahini."
+                ]
+              },
+              {
+                "name": "Self-Packing Lunch Options",
+                "items": [
+                  "Coastal Tuna/Salmon Ceviche (Raw Dish): Cubes of fresh raw yellowfin tuna cured instantly in sharp lime juice, cold-pressed olive oil, red onion, and coriander.",
+                  "Crispy Seared Teriyaki Tofu: Firm tofu slabs pan-fried until deeply golden, glazed with a sweet teriyaki and soy reduction.",
+                  "Assorted Bread Spread: Freshly sliced breads, wheat tortillas, and flatbreads.",
+                  "Fresh Veggie Packing Bar: Whole crisp lettuce leaves (for wrappers), firm avocado slices, red onion rings, and sweet bell pepper strips."
+                ]
+              }
+            ]
+          },
+          {
+            "type": "Dinner (Hotel Sigiriya)",
+            "sections": [
+              {
+                "name": "Dinner Main Course (Choose 1)",
+                "items": [
+                  "Seared Yellowfin Tuna Steak: Tuna heavily coated with cracked black pepper, seared exactly 1-2 minutes per side for a rare center, served with wild orange glaze.",
+                  "Yellow Fin Tuna with Cauliflower Gratin: Pan-seared tuna steak served alongside a baked, cheesy cauliflower gratin and salsa verde.",
+                  "Pan-Seared Sea Bass in Lime Butter: Fresh sea bass fillet seared in hot olive oil, finished with a reduction of real butter and sharp lime juice."
+                ]
+              },
+              {
+                "name": "Dinner Sides (Choose 2)",
+                "items": [
+                  "Silk Mashed Potatoes: Velvet-smooth mashed regular potatoes whipped with hot milk and a generous amount of real butter.",
+                  "Coconut-Steamed Rice: Aromatic white rice steamed with pure coconut cream for a rich, delicate fragrance.",
+                  "Blistered Sweet Potato Medallions: Sweet potato discs pan-fried in extra virgin olive oil with crispy, golden garlic chips."
+                ]
+              },
+              {
+                "name": "Dinner Salad (Choose 1)",
+                "items": [
+                  "Blistered Cherry Tomato Salad: Skillet-charred cherry tomatoes and sweet bell peppers tossed hot with raw purple onion and olive oil.",
+                  "Thai-Style Mango Salad: Julienne of semi-ripe mango, fresh local cucumber, green onions, and crushed roasted peanuts with sesame oil.",
+                  "Greek Salad: Large chunks of green lettuce, black and green olives, bell pepper, onion, tomato, and cucumber topped with feta and dried oregano."
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "dayNumber": 3,
+      "date": "2026-09-01",
+      "title": "Whitewater Rafting & Canyoning Adventure",
+      "location": "Kithulgala to Nuwara Eliya",
+      "hotel": "Designated Premium Accommodation (Nuwara Eliya)",
+      "meals": ["Breakfast", "Dinner"],
+      "reminders": {
+        "clothing": "💦 Water sports: Bring a dry change of clothes. 🧥 Temperature drop notice: Nuwara Eliya gets cold at night (around 14°C), pack a warm fleece/sweater!",
+        "footwear": "👟 Water shoes required for rafting and canyoning. Hiking boots/sneakers for the morning."
+      },
+      "timeline": [
+        { "time": "06:30 AM", "title": "Sunrise Hike & Morning Yoga", "desc": "A refreshing outdoor yoga session to energize for the adventure-filled day." },
+        { "time": "08:00 AM", "title": "Breakfast & Checkout", "desc": "Enjoy breakfast and self-pack a lunch box before departing Sigiriya." },
+        { "time": "11:00 AM", "title": "Rafting & Canyoning in Kithulgala", "desc": "Thrilling whitewater rafting and sliding down natural rainforest rock canyons." },
+        { "time": "03:30 PM", "title": "Drive to Nuwara Eliya", "desc": "Winding drive through cascading tea valleys into the cold mountain air." },
+        { "time": "07:30 PM", "title": "Cozy Highland Dinner", "desc": "Comforting, rich Italian Trattoria warmth served up in the cold hills of Nuwara Eliya." }
+      ],
+      "culinary": {
+        "concept": "Savory Mediterranean breakfast moving into comforting, rich Italian Trattoria warmth up in the cold hills.",
+        "meals": [
+          {
+            "type": "Breakfast & Self-Packing Lunch (Hotel Sigiriya)",
+            "sections": [
+              {
+                "name": "Breakfast Main Course (Choose 1)",
+                "items": [
+                  "Gourmet Sea Bass Shakshuka: Eggs slow-poached in a rich, chunked tomato sauce reduced for hours with olive oil, garlic, and sea bass flakes.",
+                  "Soft-Scramble Tofu Fold: Slow-cooked scrambled eggs whisked continuously with butter cubes and folded with crispy, pan-fried tofu bits.",
+                  "Pol Rotti Style Flatbread: Hot pan-seared paratha flatbread brushed generously with melted butter, honey, and crushed toasted cashews."
+                ]
+              },
+              {
+                "name": "Breakfast Sides (Choose 2)",
+                "items": [
+                  "Chunky Guacamole: Hand-mashed avocado chunks with fresh lime juice, finely minced sweet onions, and gray sea salt.",
+                  "Garlic-Tahini Emulsion: Rich raw tahini paste emulsified with freshly squeezed lemon juice, iced water, and a touch of raw garlic.",
+                  "Artisan Bread & Cream Cheese: Thick-cut fresh bread slices served with premium cream cheese."
+                ]
+              },
+              {
+                "name": "Breakfast Salad (Choose 1)",
+                "items": [
+                  "Rustic Garden Greens: Shredded crunchy lettuce, diced vine tomatoes, fresh cucumber, bell peppers, and green onions with olive oil.",
+                  "Sweet Poke Bowl Base: Coconut rice or chia base topped with finely diced fresh papaya, mango, and pineapple, garnished with toasted coconut flakes and cashews.",
+                  "Ribboned Cucumber Ribbon Salad: Thinly shaved fresh cucumbers, dill pickles, and sweet bell peppers in a zesty olive oil dress."
+                ]
+              },
+              {
+                "name": "Self-Packing Lunch Options",
+                "items": [
+                  "Sesame Tuna Tartare (Raw Dish): Pristine cubes of fresh raw tuna tossed gently with toasted sesame oil, organic soy, lime juice, red onion, and coriander.",
+                  "Deli Hard-Boiled Egg Salad: Hard-boiled egg quarters tossed with finely snipped green onions, rich mayonnaise, and crunched pickles.",
+                  "Deli Tuna Salad Base: Yellowfin tuna flakes combined with diced bell peppers, onion, tomato, lime juice, and a light olive oil dress.",
+                  "Fresh Veggie Packing Bar: Crisp cucumber rounds, thick tomato slices, colorful bell pepper strips, and fresh coriander & mint leaves."
+                ]
+              }
+            ]
+          },
+          {
+            "type": "Dinner (Nuwara Eliya)",
+            "sections": [
+              {
+                "name": "Dinner Main Course (Choose 1)",
+                "items": [
+                  "Trattoria Spaghetti Carbonara: Long pasta tossed off-the-fire with fresh egg yolks, real butter, cracked black pepper, and crispy fried tofu bits.",
+                  "Choice of Pasta (Alfredo): Penne pasta tossed in a rich, velvety butter, cooking cream, and grated parmesan cheese emulsion with minced garlic.",
+                  "Sri Lankan Kottu Roti: Godamba roti flatbread strips chopped vigorously on a griddle with cabbage, carrots, leeks, onion, garlic, and curry gravy."
+                ]
+              },
+              {
+                "name": "Dinner Sides (Choose 2)",
+                "items": [
+                  "Short Pasta Pomodoro: Short Italian pasta tossed in a rich, slow-simmered tomato and garlic confit sauce (Napolitano style).",
+                  "Steamed Jasmine Rice: Hot white rice steamed with a hint of virgin coconut oil.",
+                  "Roasted Pumpkin Soup: Creamy blended roasted pumpkin with coconut milk and curry powder, served with garlic breadsticks."
+                ]
+              },
+              {
+                "name": "Dinner Salad (Choose 1)",
+                "items": [
+                  "Tuna Panzanella Salad: Seared tuna flakes, bread croutons, green beans, tomato wedges, onion, olives, and iceberg lettuce with Dijon dressing.",
+                  "Sesame Cucumber Salad: Fresh cucumbers, red onion, and fresh coriander heavily topped with crushed roasted peanuts and sesame oil.",
+                  "Charred Pineapple Salad: Skillet-seared pineapple cubes and bell pepper strips, served lukewarm over hand-torn greens."
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "dayNumber": 4,
+      "date": "2026-09-02",
+      "title": "Tea Country & Scenic Train to Ella",
+      "location": "Nuwara Eliya to Ella",
+      "hotel": "98 Acres Resort & Spa (Ella)",
+      "meals": ["Breakfast", "Dinner"],
+      "reminders": {
+        "clothing": "Light layers. Modest clothing for public transits.",
+        "footwear": "👟 Comfy walking shoes for the tea plantation walk."
+      },
+      "timeline": [
+        { "time": "07:00 AM", "title": "Morning Yoga Session", "desc": "Revitalizing yoga in the crisp morning mountain air." },
+        { "time": "08:30 AM", "title": "Tea Plantations & Waterfalls", "desc": "Tour a historic tea factory, walk the plantation, and sample Ceylon tea. Photo stops at waterfalls." },
+        { "time": "12:30 PM", "title": "Scenic Highland Train", "desc": "Board the iconic train from Nanu Oya to Ella. 📸 Have camera ready for the train ride!" },
+        { "time": "04:30 PM", "title": "Ella Check-in", "desc": "Check-in at the highly-acclaimed 98 Acres Resort & Spa, nested in green hills." },
+        { "time": "07:00 PM", "title": "Shabbat/Communal Dinner at Chabad House", "desc": "Group dinner at the Ella Chabad House for a warm, home-cooked meal." }
+      ],
+      "culinary": {
+        "concept": "Hearty, slow-cooked comforting textures perfect for the scenic train journey to Ella.",
+        "meals": [
+          {
+            "type": "Breakfast & Self-Packing Lunch (Nuwara Eliya Hotel)",
+            "sections": [
+              {
+                "name": "Breakfast Main Course (Choose 1)",
+                "items": [
+                  "Spanish Tortilla de Patatas: A thick, rich omelette cooked slowly with olive oil-confit diced potatoes, regular potatoes, and translucent onions.",
+                  "Super Crispy Lacy Eggs: Two farm eggs fried in smoking hot olive oil to create a deeply crunchy white lace border while keeping the yolk fully liquid.",
+                  "Your Choice of Eggs: Eggs cooked to order (fried/scrambled/omelet) served with grilled tomato and sautéed mushrooms."
+                ]
+              },
+              {
+                "name": "Breakfast Sides (Choose 2)",
+                "items": [
+                  "Avocado Fan: Fresh avocado fan brushed with fresh lime juice, sea salt, and coarse black pepper.",
+                  "Garlic-Tahini Spread: Thick, gastronomic raw tahini spread whipped with confit garlic and olive oil.",
+                  "Baked Beans: Small warm ramekin of sweet and savory baked beans."
+                ]
+              },
+              {
+                "name": "Breakfast Salad (Choose 1)",
+                "items": [
+                  "Vibrant Tomato Medley: Halved cherry tomatoes, sweet bell peppers, and finely chopped onions in extra virgin olive oil.",
+                  "Sweet Poke Bowl Base: Diced fresh papaya, mango, and pineapple arranged over coconut rice, drizzled with kithul treacle.",
+                  "Green Lentil Soup: Creamy, partially blended green lentils and coconut milk soup, served warm with garlic breadsticks."
+                ]
+              },
+              {
+                "name": "Self-Packing Lunch Options",
+                "items": [
+                  "Nikkei Tuna/Salmon Tiradito (Raw Dish): Sashimi-style thin slices of fresh raw fish arranged with toasted sesame oil, premium soy, fresh lime juice, and a touch of honey.",
+                  "Special Vegetable Burger Pattern: Pan-fried potato and carrot-based vegetable patties with a golden outer crust.",
+                  "Deli Hard-Boiled Egg Halves: Perfect hard-boiled eggs for custom packing.",
+                  "Fresh Veggie Packing Bar: Crisp carrot batons, red and yellow bell pepper strips, firm cherry tomatoes, and whole lettuce wrappers."
+                ]
+              }
+            ]
+          },
+          {
+            "type": "Dinner (Ella Chabad House)",
+            "sections": [
+              {
+                "name": "The Evening Feast",
+                "items": [
+                  "An authentic, warm communal kosher dinner prepared by and served at the Ella Chabad House to comfort the group after arriving in town."
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "dayNumber": 5,
+      "date": "2026-09-03",
+      "title": "Diyaluma Falls & Zipline Adventure",
+      "location": "Ella",
+      "hotel": "98 Acres Resort & Spa (Ella)",
+      "meals": ["Breakfast", "Dinner"],
+      "reminders": {
+        "clothing": "Swimwear for the falls, activewear for the zipline.",
+        "footwear": "👟 Sturdy sneakers required for the zipline and falls excursion."
+      },
+      "timeline": [
+        { "time": "06:00 AM", "title": "Sunrise Hike & Morning Yoga", "desc": "Hike to a nearby peak for sunrise yoga overlooking Ella Gap." },
+        { "time": "08:30 AM", "title": "Diyaluma Falls Excursion", "desc": "Travel to Sri Lanka's second-highest waterfall. Hike to the upper natural pools for a swim." },
+        { "time": "02:30 PM", "title": "Flying Ravana Zipline", "desc": "Fly over lush green tea valleys on a dual zip-line reaching speeds of 80km/h." },
+        { "time": "05:00 PM", "title": "Ella Town Exploration", "desc": "Free time to stroll Ella's bohemian streets, visit cafes, or relax at the spa." },
+        { "time": "07:30 PM", "title": "Dinner at Chabad House", "desc": "A second night of custom hospitality and communal dinner at the Ella Chabad House." }
+      ],
+      "culinary": {
+        "concept": "Balanced, refreshing textures to support an active day of canyoning, hiking, and ziplining.",
+        "meals": [
+          {
+            "type": "Breakfast & Self-Packing Lunch (Ella Hotel)",
+            "sections": [
+              {
+                "name": "Breakfast Main Course (Choose 1)",
+                "items": [
+                  "Velvety White Shakshuka: Eggs poached gently over a base of mushrooms and onions sautéed in butter, finished with cream cheese and coconut milk.",
+                  "Omelette aux Fines Herbes: Eggs whisked with plenty of chopped green onions, coriander, bell peppers, and fine broccoli florets, cooked in olive oil.",
+                  "Continental Breakfast Spread: Assorted fresh breads, Godamba roti flatbreads, wheat tortillas, served with butter and local jams."
+                ]
+              },
+              {
+                "name": "Breakfast Sides (Choose 2)",
+                "items": [
+                  "Avocado Carpaccio: Thinly sliced avocado drizzled with olive oil, coarse sea salt, and black pepper.",
+                  "Zesty Garlic Tahini: Premium raw tahini whisked with plenty of fresh lime juice and garlic.",
+                  "Kola Kanda (Herbal Porridge): Traditional green leaf herbal extract blended with soft boiled white rice and coconut milk, served with jaggery."
+                ]
+              },
+              {
+                "name": "Breakfast Salad (Choose 1)",
+                "items": [
+                  "The Ultimate Tropical Harvest: Diced mango, papaya, dragon fruit, and banana with fresh passionfruit pulp and honey.",
+                  "Bright Cherry Tomato Salad: Halved cherry tomatoes, crisp lettuce, bell peppers, and green onions with a lime-olive oil emulsion.",
+                  "Pittu Crumb Salad: String Hoppers or Pittu lightly tossed with sweet raisins and kithul treacle."
+                ]
+              },
+              {
+                "name": "Self-Packing Lunch Options",
+                "items": [
+                  "Tuna Pokė Loin Core (Raw Dish): Perfect cubes of pristine raw yellowfin tuna marinated briefly in soy sauce, teriyaki, and a splash of white rice vinegar.",
+                  "Stir-Fried Asian Egg Salad: Hard-boiled egg salad tossed with green onions, mayonnaise, and a hint of sweet teriyaki sauce.",
+                  "Savory Poke Bowl Veggie Fillers: Edamame, carrots, radish, cucumber, and pickled ginger.",
+                  "Fresh Veggie Packing Bar: Diced avocado, grated carrots, fresh cucumber ribbons, chopped lettuce, and sweet bell pepper rings."
+                ]
+              }
+            ]
+          },
+          {
+            "type": "Dinner (Ella Chabad House)",
+            "sections": [
+              {
+                "name": "The Evening Feast",
+                "items": [
+                  "A second night of custom hospitality, celebrating the group's final evening in the Ella hill country with a festive dinner at the Chabad House."
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "dayNumber": 6,
+      "date": "2026-09-04",
+      "title": "East Coast Paddleboarding & Shabbat Prep",
+      "location": "Ella to Pasikudah",
+      "hotel": "Sun Siyam Pasikudah (Pasikudah / Arugam Bay)",
+      "meals": ["Breakfast", "Dinner"],
+      "reminders": {
+        "clothing": "👙 Swimwear and sun protection for SUP. 🤍 White/festive modest dress for the Shabbat dinner.",
+        "footwear": "Sandals or water shoes."
+      },
+      "timeline": [
+        { "time": "07:00 AM", "title": "Final Ella Yoga", "desc": "Energizing yoga session before checkout." },
+        { "time": "08:30 AM", "title": "Transit to Pasikudah Bay", "desc": "Scenic drive out of the hills to the pristine beaches of the East Coast." },
+        { "time": "12:30 PM", "title": "SUP & Beach Relaxation", "desc": "Try Stand-Up Paddleboarding in the calm waters of Pasikudah Bay, or relax on the white sand." },
+        { "time": "05:30 PM", "title": "Candle Lighting & Shabbat Prep", "desc": "Shabbat preparation at the luxurious Sun Siyam Pasikudah." },
+        { "time": "07:30 PM", "title": "Festive Shabbat Dinner", "desc": "Traditional Shabbat dinner cooked completely before sunset, held safely on hotplates." }
+      ],
+      "culinary": {
+        "concept": "Transitioning from the high mountains to the East Coast. All hot items are cooked and safely held before candle lighting, delivering a majestic, halakhic Friday night feast.",
+        "meals": [
+          {
+            "type": "Breakfast & Self-Packing Lunch (Ella Hotel)",
+            "sections": [
+              {
+                "name": "Breakfast Main Course (Choose 1)",
+                "items": [
+                  "Air-Whipped Soufflé Pancakes: Fluffy hotcakes topped with real butter and a sweet strawberry jam reduction.",
+                  "Classic Eggs Benedict: Runny poached eggs over crusty artisan bread, draped in velvety real butter & fresh lime hollandaise.",
+                  "Vanilla French Toast: Thick bread soaked in an egg, milk, and vanilla wash, pan-fried in butter with strawberry jam."
+                ]
+              },
+              {
+                "name": "Breakfast Sides (Choose 2)",
+                "items": [
+                  "Cloud-Whipped Tahini: Premium raw tahini emulsified with iced water, crushed garlic, and lime juice.",
+                  "Pan-Blistered Sweet Potatoes: Fresh local sweet potato chunks pan-seared with cold-pressed olive oil & dried herbs.",
+                  "Garlic Confit Spread: Sweet garlic confit cloves whipped with olive oil."
+                ]
+              },
+              {
+                "name": "Breakfast Salad (Choose 1)",
+                "items": [
+                  "Bright Cherry Tomato Salad: Halved cherry tomatoes, crisp lettuce, bell peppers, and green onions with a lime-olive oil emulsion.",
+                  "The Ultimate Tropical Harvest: Diced mango, papaya, dragon fruit, and banana with fresh passionfruit pulp and honey.",
+                  "Porridge with Oats: Warm oats boiled in coconut milk, topped with chopped dates and roasted peanuts."
+                ]
+              },
+              {
+                "name": "Self-Packing Lunch Options",
+                "items": [
+                  "Coastal Tuna/Salmon Ceviche (Raw Dish): Cubes of fresh raw fish cured instantly in sharp lime juice, cold-pressed olive oil, red onion, and coriander.",
+                  "Deli Hard-Boiled Egg Salad: Chopped hard-boiled eggs in rich mayonnaise, mustard, and micro-diced bell peppers.",
+                  "Special Vegetable Burger Patties: Pan-fried potato and carrot-based vegetable patties.",
+                  "Fresh Veggie Packing Bar: Crisp colorful bell pepper strips, firm cherry tomato halves, cool cucumber wheels, and crunchy carrot batons."
+                ]
+              }
+            ]
+          },
+          {
+            "type": "Hot Shabbat Dinner (Pasikudah Bay Hotel)",
+            "sections": [
+              {
+                "name": "Hot Fish Main Courses (Cooked Pre-Shabbat)",
+                "items": [
+                  "Herb-Crusted Seared Cod: Thick white fish fillets cooked under a tight seal in rich olive oil, garlic confit, broccoli, and white wine vinegar.",
+                  "Claypot Fish Curry (Sri Lankan Style): Chunks of local Seer or Tuna slow-cooked in rich coconut milk curry sauce with mustard seeds.",
+                  "Garlic Butter Sea Bass: Tender Sea Bass fillets bathed in a hot reduction of melted butter, crushed garlic, and fresh local herbs."
+                ]
+              },
+              {
+                "name": "Hot Side Dishes",
+                "items": [
+                  "Silk Mashed Potatoes: Velvety regular potatoes creamed with butter and hot milk.",
+                  "Short Pasta Pomodoro: Pasta tossed in a rich, slow-simmered tomato and garlic reduction (Napolitano style).",
+                  "Aromatic Coconut Rice: Fluffy white rice cooked in diluted coconut milk with pandan aromas."
+                ]
+              },
+              {
+                "name": "Accompanying Shabbat Salads & Dips (Cold)",
+                "items": [
+                  "Festive Avocado, Tomato & Pepper Salad: Cherry tomatoes, colorful bell peppers, diced avocado, red onion, and black olives in an herb-olive oil marinade.",
+                  "Sweet Mango-Pineapple Salad: Fresh mango and pineapple chunks served over crisp lettuce with fresh coriander and red onion.",
+                  "Fresh bakery baskets, whipped tahini, and sweet local jams."
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "dayNumber": 7,
+      "date": "2026-09-05",
+      "title": "A Restful Shabbat in Pasikudah",
+      "location": "Pasikudah",
+      "hotel": "Sun Siyam Pasikudah (Pasikudah / Arugam Bay)",
+      "meals": ["Breakfast", "Lunch", "Dinner"],
+      "reminders": {
+        "clothing": "Casual beachwear, comfortable dresses.",
+        "footwear": "Barefoot or light beach sandals. 💤 Pure relaxation day. No digital active tasks needed."
+      },
+      "timeline": [
+        { "time": "08:00 AM", "title": "Shabbat Coffee & Pastries", "desc": "Pre-set hot tea or coffee (urn) with wafers, cakes, and gourmet cookies." },
+        { "time": "10:00 AM", "title": "Refreshing Kiddush", "desc": "Grazing station of sliced tropical fruits, fresh veggies, tahini, and sweet buns." },
+        { "time": "01:00 PM", "title": "Shabbat Lunch Buffet", "desc": "Cold grand buffet featuring Tuna Poke, Egg/Avocado Terrine, and Tuna Confit platters." },
+        { "time": "06:00 PM", "title": "Mini Seudah Shlishit", "desc": "Third Shabbat meal featuring fresh fruits, raw veggies, guacamole, crackers, and sweets." },
+        { "time": "07:30 PM", "title": "Havdalah Ceremony", "desc": "Havdalah marking the end of Shabbat." },
+        { "time": "09:00 PM", "title": "Motzash Dinner", "desc": "Celebratory hot dinner featuring seared tuna, claypot curries, or pesto pasta." }
+      ],
+      "culinary": {
+        "concept": "Strict adherence to Shabbat halakha with zero active heating or electricity adjustments. A highly sophisticated, completely cold/room-temperature 5-star brunch and lunch spread.",
+        "meals": [
+          {
+            "type": "Shabbat Morning & Kiddush",
+            "sections": [
+              {
+                "name": "08:00 AM Coffee Sweet Accents",
+                "items": [
+                  "Assorted fresh cakes, Manner wafers, Nutella biscuits, and gourmet chocolates.",
+                  "Pre-set hot premium Ceylon Tea or Nescafé Coffee (via hot water urn set before Shabbat)."
+                ]
+              },
+              {
+                "name": "10:00 AM Kiddush Grazing Station",
+                "items": [
+                  "Freshly sliced local tropical fruits (Mango, Pineapple, Papaya), crisp cucumber rounds, sweet cherry tomatoes, bell peppers, and creamy garlic-lime Tahini.",
+                  "Bakery Basket: Cookies, local sweet buns, halawa with pistachio, and premium sweets."
+                ]
+              }
+            ]
+          },
+          {
+            "type": "Luxurious Shabbat Lunch (Cold Buffet)",
+            "sections": [
+              {
+                "name": "Gourmet Cold Proteins",
+                "items": [
+                  "Pristine Yellowfin Tuna Pokė & Sashimi Display: Chilled raw tuna cuts marinated cleanly in organic soy, toasted sesame oil, ginger, and fresh lime juice.",
+                  "Layered Egg, Tomato & Avocado Terrine: An elegant cold sliced terrine of chopped eggs, premium mayonnaise, vine tomatoes, and smooth avocado cream.",
+                  "Chef’s Tuna Confit & Smoked-Style Salmon Platter: Plated flakes of deep olive oil tuna, cured local fish, served with red onion, pickles, and Happy Cow cream cheese."
+                ]
+              },
+              {
+                "name": "Salads & Desserts",
+                "items": [
+                  "Deluxe Tuna Panzanella: Crisp bread croutons, flaked tuna, green beans, cherry tomatoes, purple onion, and olives in a tangy olive oil dress.",
+                  "Tropical Crunch Salad with Honey-Tahini: Crunchy lettuce, diced mango, avocado, grated carrots, and sweet corn topped with a sweet-and-savory lime tahini drizzle.",
+                  "Cold Spinach & Cashew Pesto Pasta: Short pasta tossed in spinach and cashew pesto, topped with crispy tofu bits and crushed peanuts.",
+                  "Desserts: Coconut-cooked rice cubes (Kiri Bath) with kithul treacle, chunks of halawa with pistachio, banana-strawberry skewers, and Nutella biscuits."
+                ]
+              }
+            ]
+          },
+          {
+            "type": "Seudah Shlishit & Motzash Dinner",
+            "sections": [
+              {
+                "name": "06:00 PM Third Shabbat Meal",
+                "items": [
+                  "Beautifully presented platters of sliced fresh tropical fruits and crisp raw vegetables. Served alongside whipped avocado guacamole, raw tahini, cream cheese, crackers, and traditional sweet delicacies."
+                ]
+              },
+              {
+                "name": "09:00 PM Motzash Hot Dinner (Active Cooking)",
+                "items": [
+                  "Seared Yellowfin Tuna Steak: Tuna heavily coated with cracked black pepper, hard-seared exactly 1-2 minutes per side for a rare center, served with orange glaze.",
+                  "Gourmet Sri Lankan Curry: Chunks of local fish or whole mushrooms slow-simmered in a rich, clay-pot style curry coconut milk broth, served with crisp papadams.",
+                  "Penne with Spinach Pesto: Penne pasta tossed in a rich, homemade smooth spinach, cashew, garlic, parmesan, and olive oil pesto.",
+                  "Sides: Shoestring Pommes Frites, Steamed Jasmine Rice, Fluffed Herb Couscous.",
+                  "Salad: Warm Sweet Potato Salad, Sautéed Mushroom Salad, Blanched Baby Corn Salad."
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "dayNumber": 8,
+      "date": "2026-09-06",
+      "title": "Trincomalee Snorkeling & Marine Safari",
+      "location": "Pasikudah to Trincomalee",
+      "hotel": "Sun Siyam Pasikudah (Pasikudah / Arugam Bay)",
+      "meals": ["Breakfast", "Dinner"],
+      "reminders": {
+        "clothing": "Swimwear, sun protection. Modest clothing for town stroll.",
+        "footwear": "🤿 Snorkeling gear ready. Optional dolphin watching requires payment on-site."
+      },
+      "timeline": [
+        { "time": "07:00 AM", "title": "Morning Yoga", "desc": "Beachfront yoga to prepare for marine exploration." },
+        { "time": "08:30 AM", "title": "Excursion to Trincomalee", "desc": "Drive to Trincomalee, home to one of the world's deepest natural harbors." },
+        { "time": "10:30 AM", "title": "Snorkeling at Pigeon Island", "desc": "Snorkel among live coral reefs, sea turtles, and blacktip reef sharks." },
+        { "time": "02:00 PM", "title": "Trinco Town & Local Shopping", "desc": "Explore historical temples, visit local markets, and buy local handicrafts." },
+        { "time": "04:00 PM", "title": "Marine Wildlife Safari", "desc": "Optional whale and dolphin watching in the open ocean (paid on-site)." },
+        { "time": "07:30 PM", "title": "Resort Dinner", "desc": "Return to Pasikudah for our farewell coastal seafood feast." }
+      ],
+      "culinary": {
+        "concept": "Clean, high-protein Tokyo Poke and fresh coastal elements to power up ocean snorkeling.",
+        "meals": [
+          {
+            "type": "Breakfast & Self-Packing Lunch (Pasikudah Bay Hotel)",
+            "sections": [
+              {
+                "name": "Breakfast Main Course (Choose 1)",
+                "items": [
+                  "Gourmet Sea Bass Shakshuka: Eggs slow-poached in a rich, chunked tomato sauce reduced for hours with olive oil, garlic, and sea bass flakes.",
+                  "Spanish Tortilla de Patatas: A thick, rich omelette cooked slowly with olive oil-confit diced potatoes, regular potatoes, and translucent onions.",
+                  "Coconut & Banana Crêpe: Delicate pancake filled with butter & honey caramelized bananas."
+                ]
+              },
+              {
+                "name": "Breakfast Sides (Choose 2)",
+                "items": [
+                  "Avocado Fan: Fresh avocado fan brushed with fresh lime juice, sea salt, and coarse black pepper.",
+                  "Stuffed Avocado Boats: Half-avocados filled with micro-diced cherry tomatoes, extra virgin olive oil, and sea salt.",
+                  "Baked Beans: Small warm ramekin of sweet and savory baked beans."
+                ]
+              },
+              {
+                "name": "Breakfast Salad & Poke",
+                "items": [
+                  "Sweet Poke Bowl Base (Treacle Drizzle): Diced fresh papaya, mango, and pineapple arranged over coconut rice, drizzled with kithul treacle.",
+                  "Exotic Fruit Platter: Slices of fresh mango, pineapple, papaya, and local banana with fresh passionfruit seeds & honey.",
+                  "Pittu Crumb Salad: String Hoppers or Pittu lightly tossed with sweet raisins and kithul treacle."
+                ]
+              },
+              {
+                "name": "Self-Packing Lunch Options",
+                "items": [
+                  "Tuna Pokė Loin Core (Raw Dish): Perfect cubes of pristine raw yellowfin tuna marinated briefly in soy sauce, teriyaki, and a splash of white rice vinegar.",
+                  "Chef’s Tuna Confit Salad: Flaky tuna chunks slow-infused with deep olive oil, green onions, and grated carrots.",
+                  "Deli Hard-Boiled Egg Halves: Perfect hard-boiled eggs for custom packing.",
+                  "Fresh Veggie Packing Bar: Crisp cucumber rounds, thick tomato slices, colorful bell pepper strips, and fresh coriander & mint leaves."
+                ]
+              }
+            ]
+          },
+          {
+            "type": "Dinner (Pasikudah)",
+            "sections": [
+              {
+                "name": "Dinner Main Course (Choose 1)",
+                "items": [
+                  "Wok-Tossed Egg Noodles: Noodles flash-fried at high heat with sesame oil, soy sauce, carrots, and peppers, marbled with a whisked egg.",
+                  "Gourmet Chili Fish: Thick chunks of local white fish or tuna stir-fried in a rich, sweet-and-spicy garlic-chili glaze.",
+                  "Sea Bass 'En Papillote' (Skillet-Style): White fish fillet slow-cooked in a sealed parchment pouch with olive oil, garlic, and broccoli."
+                ]
+              },
+              {
+                "name": "Dinner Sides & Salads",
+                "items": [
+                  "Sides: Garlic Confit Pasta, Steamed Jasmine Rice, Skillet Potato Crisps.",
+                  "Salad: Sesame Cucumber Salad, Blanched Baby Corn Salad, Warm Mushroom & Tomato Salad."
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "dayNumber": 9,
+      "date": "2026-09-07",
+      "title": "Central Island Transit to Colombo",
+      "location": "Pasikudah to Colombo",
+      "hotel": "Colombo Boutique Hotel (or similar)",
+      "meals": ["Breakfast", "Dinner"],
+      "reminders": {
+        "clothing": "Comfortable clothes for the long highway drive.",
+        "footwear": "Sneakers or comfortable walking shoes."
+      },
+      "timeline": [
+        { "time": "07:00 AM", "title": "Morning Yoga", "desc": "Final East Coast yoga session." },
+        { "time": "08:30 AM", "title": "Breakfast & Checkout", "desc": "Enjoy a final beachfront breakfast before heading inland." },
+        { "time": "10:30 AM", "title": "Transit to Colombo", "desc": "Drive back across the island to the capital city (approx. 5.5 hours)." },
+        { "time": "04:30 PM", "title": "Hotel Check-in & Settle In", "desc": "Check-in at our Colombo Boutique Hotel." },
+        { "time": "07:00 PM", "title": "Clay-Pot Dinner in Colombo", "desc": "Rich, comforting clay-pot curry served at the boutique hotel." }
+      ],
+      "culinary": {
+        "concept": "Fresh Mediterranean morning tones dropping into rich, clay-pot curry comfort down in the city.",
+        "meals": [
+          {
+            "type": "Breakfast & Self-Packing Lunch (Pasikudah Bay Hotel)",
+            "sections": [
+              {
+                "name": "Breakfast Main Course (Choose 1)",
+                "items": [
+                  "Omelette aux Fines Herbes: Eggs whisked with green onions, coriander, bell peppers, and broccoli florets, cooked in olive oil.",
+                  "Pol Rotti Style Flatbread: Hot paratha flatbread brushed with butter, honey, and cashews.",
+                  "Mediterranean Eggs: Poached eggs over local bread with caramelized onions, sun-dried tomatoes, feta, and parsley."
+                ]
+              },
+              {
+                "name": "Breakfast Sides & Salads",
+                "items": [
+                  "Sides: Zesty Garlic Tahini, Avocado Carpaccio, Kola Kanda (Herbal Porridge).",
+                  "Salad: A Gardener's Love Salad, Sweet Poke Bowl Base (Coconut Rice), Shredded Cucumber & Dill Pickle."
+                ]
+              },
+              {
+                "name": "Self-Packing Lunch Options",
+                "items": [
+                  "Asian Tuna Tartare (Raw Dish): Pristine cubes of fresh raw tuna tossed gently with toasted sesame oil, organic soy, lime juice, red onion, and coriander.",
+                  "Balsamic Grilled Veggie Base: Thinly sliced bell peppers, onions, and carrots tossed with olive oil and balsamic, pan-grilled.",
+                  "Cheese & Veggie Club Base: Premium cheese slices, white bread, and traditional savory accompaniments.",
+                  "Fresh Veggie Packing Bar: Crisp carrot batons, red and yellow bell pepper strips, firm cherry tomatoes, and whole lettuce wrappers."
+                ]
+              }
+            ]
+          },
+          {
+            "type": "Dinner (Colombo Boutique Hotel)",
+            "sections": [
+              {
+                "name": "Dinner Main Course (Choose 1)",
+                "items": [
+                  "Gourmet Sri Lankan Curry: Chunks of local fish slow-simmered in a rich, clay-pot style curry coconut milk broth, served with crisp papadams.",
+                  "Yellow Fin Tuna with Cauliflower Gratin: Pan-seared tuna steak served alongside a baked, cheesy cauliflower gratin and salsa verde.",
+                  "Spaghetti al Ragù de Tofu: Long pasta smothered in a rich, slow-cooked ragout made of finely minced tofu simmered in tomatoes."
+                ]
+              },
+              {
+                "name": "Dinner Sides & Salads",
+                "items": [
+                  "Sides: Coconut-Steamed Rice, Fluffed Herb Couscous, Roasted Pumpkin Soup.",
+                  "Salad: Tuna Panzanella Salad, Tropical Mango & Avocado Salad, Double-Texture Tomato Salad."
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "dayNumber": 10,
+      "date": "2026-09-08",
+      "title": "Departure & Chabad Meat Finale",
+      "location": "Colombo",
+      "hotel": "Departure Day (No Overnight Stay)",
+      "meals": ["Breakfast", "Lunch", "Dinner"],
+      "reminders": {
+        "clothing": "Comfortable clothes for the long overnight flight. Pack all luggage securely before the drive.",
+        "footwear": "Sneakers."
+      },
+      "timeline": [
+        { "time": "08:00 AM", "title": "Final Hotel Breakfast", "desc": "Enjoy a final boutique breakfast before city exploration." },
+        { "time": "10:30 AM", "title": "City Exploration & Shopping", "desc": "Last-minute souvenir shopping around Colombo markets and boutique shops." },
+        { "time": "01:00 PM", "title": "Picnic Lunch on the Road", "desc": "Enjoy our packed custom picnic lunch." },
+        { "time": "06:30 PM", "title": "Gourmet Kosher Dinner", "desc": "A spectacular, fully kosher meat dinner catered directly from Chabad Colombo to conclude the journey." },
+        { "time": "09:00 PM", "title": "Airport Transfers", "desc": "Drop-off at Bandaranaike International Airport (CMB) for departure flights." }
+      ],
+      "culinary": {
+        "concept": "Final hotel gourmet morning, custom packed lunch for the city exploration, and a spectacular, fully kosher meat finale.",
+        "meals": [
+          {
+            "type": "Breakfast (Colombo Boutique)",
+            "sections": [
+              {
+                "name": "Breakfast Main Course (Choose 1)",
+                "items": [
+                  "Super Crispy Lacy Eggs: Two farm eggs fried in smoking hot olive oil to create a deeply crunchy white lace border.",
+                  "French Mushroom Omelette: Silky omelette rolled with butter-sautéed mushrooms and cream cheese.",
+                  "Continental Breakfast Spread: Assorted fresh breads, Godamba roti flatbreads, wheat tortillas, served with butter and local jams."
+                ]
+              },
+              {
+                "name": "Breakfast Sides & Salads",
+                "items": [
+                  "Sides: Smashed Guacamole, Garlic-Tahini Spread, Toasted Artisan Bread with Kotmale butter.",
+                  "Salad: Vibrant Tomato Medley, The Ultimate Tropical Harvest, Coconut Oatmeal Porridge."
+                ]
+              }
+            ]
+          },
+          {
+            "type": "Packed Picnic Lunch (Prepared at Breakfast)",
+            "sections": [
+              {
+                "name": "Gourmet Picnic Selections (Choose Your Base)",
+                "items": [
+                  "The Ultimate Tuna Club Sandwich: Flaked grilled tuna mixed with finely diced bell peppers, onion, tomato, lime, and mayonnaise.",
+                  "Stir-Fried Asian Egg Wrap: Hard-boiled egg salad tossed with green onions, mayonnaise, and teriyaki wrapped in a wheat tortilla."
+                ]
+              },
+              {
+                "name": "Salads & Sides",
+                "items": [
+                  "Salads: Sweet Mango-Pineapple Salad, Charred Pineapple & Bell Pepper Mix.",
+                  "Accents: Diced avocado boxes, grated carrots, fresh cucumber ribbons, bell pepper rings, and assorted crackers."
+                ]
+              }
+            ]
+          },
+          {
+            "type": "Gourmet Kosher Meat Dinner (Chabad Colombo)",
+            "sections": [
+              {
+                "name": "The Evening Spread",
+                "items": [
+                  "A premium, fully kosher meat dinner catered directly from Chabad Colombo to perfectly conclude your magnificent 10-day island journey before the flight home."
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}
